@@ -27,3 +27,17 @@ def audit_clarity(file_path):
 
 # Simple test for this auditor itself
 print(f"Auditing current file: {audit_clarity('auditor.py')}")
+
+def audit_correctness(file_path):
+    """
+    Checks if the file has content; an empty file is a functional error.
+    """
+    import os
+    if os.path.getsize(file_path) > 0:
+        return "PASS: File contains logic."
+    else:
+        return "FAIL: File is empty."
+
+# Update your print statements to show both
+print(f"Auditing Clarity: {audit_clarity('auditor.py')}")
+print(f"Auditing Correctness: {audit_correctness('auditor.py')}")
