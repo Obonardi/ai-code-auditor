@@ -1,42 +1,36 @@
-# \# AI Code Auditor
+\# ai-code-auditor
 
-# 
 
-# \## Overview
 
-# The AI Code Auditor is a lightweight, Python-based CLI utility designed to programmatically evaluate code snippets for adherence to critical software quality dimensions. 
+!\[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# 
 
-# In an era where AI-generated code is increasingly prevalent, this tool provides an objective framework for auditing technical outputs, focusing on:
 
-# \* \*\*Correctness\*\*: Ensuring code is functional and contains logic.
+A specialized tool designed to validate code clarity, maintainability, and functional correctness through automated auditing patterns.
 
-# \* \*\*Clarity\*\*: Validating the presence of documentation (docstrings) for maintainability.
 
-# 
 
-# \## Technical Approach
+\## Purpose
 
-# The tool follows a modular design, allowing for the easy addition of new audit rules. It utilizes standard Python libraries for file system interaction, emphasizing efficient and transparent evaluation logic.
+This project provides a systematic approach to auditing source code, helping developers identify potential bottlenecks and maintain high-quality standards across their projects.
 
-# 
 
-# \## Current Audit Dimensions
 
-# 1\. \*\*Clarity\*\*: Checks for triple-quoted docstrings (double triple-quotes or single triple-quotes) to ensure code is adequately documented.
+\## Key Capabilities
 
-# 2\. \*\*Correctness\*\*: Validates that files are not empty, ensuring they contain logical statements ready for execution.
+\* \*\*Logic Validation\*\*: Automated assessment of code structure.
 
-# 
+\* \*\*Compliance Checks\*\*: Ensuring adherence to established development best practices.
 
-# \## Usage
+\* \*\*Reporting\*\*: Generates clear logs for identified issues.
 
-# To audit a specific Python file, run the following command from the project directory:
 
-# 
 
-# ```bash
+\## Usage
 
-# python auditor.py
+1\. Configure your target directory.
+
+2\. Run the auditor: `python auditor.py --path <your-code-directory>`
+
+3\. Review the generated output logs for audit results.
 
